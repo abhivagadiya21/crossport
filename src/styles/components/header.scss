@@ -1,10 +1,11 @@
 @use '../abstracts/variables.scss' as *;
 
 .header-main-container {
-  width: 100%;
+  padding: 0px 20px 0px 20px;
   display: flex;
   height: 80px;
-  border: 1px solid black;
+  // border: 1px solid black;
+  justify-content: space-between;
 }
 
 .crossport-logo{
@@ -13,7 +14,28 @@
 }
 
 .connect-container{
+  align-items: center;
+  display: flex;
+}
+
+.connect-wallet{
+  display: flex;
+}
+
+.wallet-icon{
+  width: 30px;
+  height: 30px;
 }
 
 .connect-button{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+  padding: 0.625rem 1.25rem;
+  border-radius: 9999px; 
+  font-weight: 600; 
+  font-size: 16px;
+  transition: all 0.3s ease; 
+  cursor: pointer;
+  border: none;
 }
