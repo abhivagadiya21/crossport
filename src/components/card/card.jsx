@@ -1,8 +1,6 @@
 import { useState } from "react";
-// import "dotenv/config";
 import { BridgeKit } from "@circle-fin/bridge-kit";
 import { createAdapterFromPrivateKey } from "@circle-fin/adapter-viem-v2";
-//import { inspect } from "util";
 
 const card = () => {
     const kit = new BridgeKit();
@@ -87,9 +85,6 @@ const card = () => {
                                 {console.log(rightchain)}
                             </select>
                         </div>
-                        {/* {leftchain && rightchain && leftchain === rightchain && (
-                            alert("Please select different chains for bridging.")
-                        )} */}
                     </div>
                     <div className="value-input">
                         <input type="text" value={inputvalue} onChange={(e) => setInputvalue(e.target.value)} />
