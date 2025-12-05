@@ -1,5 +1,6 @@
 import React from 'react'
 import crossport from '../../assets/cp.png'
+import wallet from '../../assets/wallet.svg'
 
 const Header = () => {
   return (
@@ -8,7 +9,10 @@ const Header = () => {
         <img  className='crossport-logo' src={crossport} />
 
         <div className='connect-container'>
-            <button className='connect-button'>Connect Wallet</button>
+            <div className='connect-wallet'>
+            <button className='connect-button'> <img className='wallet-icon' src={wallet} alt="" />
+            Connect Wallet</button>
+            </div>
         </div>
       </div>
     </>
